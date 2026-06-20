@@ -11,17 +11,17 @@
 ## FarmTech Solutions
 
 ## 👨‍🎓 Integrantes:
-- <a href="https://www.linkedin.com/company/inova-fusca">Leandro Tenorio da Silva — RM572083</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nicolas Xavier Costa — RM570336</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Diego Brega — RM572085</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Pedro Henrique Lima Schneider — RM573999</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">João Pedro Bessa — RM570160</a>
+- Leandro Tenorio da Silva — RM572083
+- Nicolas Xavier Costa — RM570336
+- Diego Brega — RM572085
+- Pedro Henrique Lima Schneider — RM573999
+- João Pedro Bessa — RM570160
 
 ## 👩‍🏫 Professores:
 ### Tutor(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">Lucas Gomes Moreira</a>
+-
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">André Godoi Chiovato</a>
+-
 
 ## 📜 Descrição
 
