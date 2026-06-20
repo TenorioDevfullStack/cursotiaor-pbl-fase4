@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "author": "Leandro Tenorio",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -9.6, "left": 158.44, "attrs": {} },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -140.8,
+      "left": -56.8,
+      "attrs": {}
+    },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": -134.2, "left": 278.4, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -143.7,
+      "left": 177,
+      "attrs": { "humidity": "40" }
+    },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": 234.8, "left": 319.9, "attrs": {} },
+    { "type": "wokwi-slide-switch", "id": "sw2", "top": 234.8, "left": 79.9, "attrs": {} },
+    { "type": "wokwi-slide-switch", "id": "sw3", "top": 234.8, "left": 195.1, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "sw2:2", "esp:12", "green", [ "v19.2", "h38.5", "v-153.6" ] ],
+    [ "sw3:2", "esp:13", "green", [ "v19.2", "h-67.1", "v-134.4" ] ],
+    [ "sw1:2", "esp:14", "green", [ "v38.4", "h-268.7", "v-182.4" ] ],
+    [ "sw2:1", "esp:GND.2", "black", [ "v28.8", "h201.6", "v-278.4" ] ],
+    [ "sw3:1", "esp:GND.2", "black", [ "v9.6", "h-48", "v-67.2", "h124.8", "v-192" ] ],
+    [ "sw1:1", "esp:GND.2", "black", [ "v28.8", "h-28.8", "v-278.4" ] ],
+    [ "dht1:SDA", "esp:15", "gold", [ "v9.6", "h115.3", "v182.4" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v9.6", "h-38.4", "v38.4" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "v0", "h105.6", "v48" ] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "h19.2", "v144" ] ],
+    [ "ldr1:AO", "esp:34", "blue", [ "h9.6", "v152.9" ] ],
+    [
+      "relay1:VCC",
+      "esp:5V",
+      "red",
+      [ "h-9.6", "v-28.8", "h153.6", "v460.8", "h-364.8", "v-124.8" ]
+    ],
+    [
+      "relay1:GND",
+      "esp:GND.1",
+      "black",
+      [ "h-19.2", "v-48.4", "h172.8", "v480", "h-384", "v-182.4" ]
+    ],
+    [ "relay1:IN", "esp:2", "#8f4814", [ "h0", "v57.4", "h57.6", "v192" ] ],
+    [ "ldr1:GND", "esp:GND.1", "black", [ "h28.8", "v258.8" ] ]
+  ],
+  "serialMonitor": {
+    "display": "always",
+    "newline": "lf"
+  },
+  "dependencies": {}
+}

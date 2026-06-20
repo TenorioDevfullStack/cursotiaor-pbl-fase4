@@ -1,0 +1,10 @@
+requests
+pyserial
+platformio
+oracledb
+streamlit
+pandas
+plotly
+scikit-learn
+numpy
+joblib
